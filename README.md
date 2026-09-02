@@ -1,6 +1,3 @@
-## Language
-*JavaScript
-
 # Codewars Solutions
 
 My JavaScript solutions to Codewars challenges.
