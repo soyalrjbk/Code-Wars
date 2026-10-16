@@ -14,28 +14,27 @@ fizzbuzz(3) -->  [1, 2, "Fizz"]
 */
 
 function fizzbuzz(n) {
-  let array = [];
-  
-for (let i = 1; i <= n; i++) {
-  //multiple of both 3 and 5
-  //push "FizzBuzz"
-  if (i % 3 === 0 && i % 5 === 0) {
-    array.push("Fizzbuzz");
-   //multiple of both 3
-   //push "Fizz"
-  } else if (i % 3 === 0) {
-    array.push("Fizz");
-    //multiple of 5
-    //push "Buzz"
-  } else if (i%5==0) {
-    array.push("Buzz");
-    //Nothing applies
-    //push the number
-  } else {
-    array.push(i);
+  let array=[];
+
+  for (let i=1; i<=n; i++) {
+    //multiple of both 3 and 5
+    //push "FizzBuzz"
+    if (i%3===0 && i%5===0) {
+      array.push("FizzBuzz");
+      //multiple of both 3
+      //push "Fizz"
+    } else if (i%3===0) {
+      array.push("Fizz");
+      //multiple of 5
+      //push "Buzz"
+    } else if (i%5==0) {
+      array.push("Buzz");
+      //Nothing applied
+      //push the number
+    } else {
+      array.push(i);
+    }
   }
+  
+return array;
 }
-  
-  //Return the finished array
-  return array;
-  }
